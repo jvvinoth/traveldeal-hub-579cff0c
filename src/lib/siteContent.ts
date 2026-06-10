@@ -239,49 +239,53 @@ export const siteContent = {
       'Agoda', 'Priceline', 'Qatar Airways', 'Emirates', 'Singapore Airlines',
     ],
     comparisonTitle: 'See the difference',
-    comparisonSubtitle: 'Example: Round-trip London → New York',
-    comparisonData: [
-      { provider: 'Direct booking', price: 847, features: ['Standard baggage', 'No flexibility'] },
-      { provider: 'Travel agent', price: 792, features: ['Phone support', '24hr hold'] },
-      { provider: 'TravelDeal Hub', price: 689, features: ['Best price guarantee', 'Instant compare', 'All fees included'], highlight: true },
+    comparisonDescription: 'Real example: Tokyo round-trip flight comparison',
+    sampleComparison: [
+      { provider: 'TravelDeal Hub', price: 1284, fees: 0, total: 1284, isBest: true },
+      { provider: 'Expedia', price: 1298, fees: 45, total: 1343, isBest: false },
+      { provider: 'Booking.com', price: 1312, fees: 38, total: 1350, isBest: false },
+      { provider: 'Direct airline', price: 1289, fees: 72, total: 1361, isBest: false },
     ],
   },
   
   ctaBanner: {
-    badge: 'Never miss a deal',
-    title: 'Set a price alert and let deals come to you',
-    subtitle: "We'll notify you when prices drop for your dream destination",
+    title: 'Never miss a deal again',
+    subtitle: 'Set price alerts for your dream destinations and get notified instantly when prices drop below your budget.',
+    features: [
+      'Real-time price tracking across 40+ providers',
+      'WhatsApp notifications when prices drop',
+      'No spam, only alerts you care about',
+    ],
     form: {
-      destinationPlaceholder: 'Where do you want to go?',
-      budgetPlaceholder: 'Your budget (e.g., $500)',
-      emailPlaceholder: 'Your email',
-      button: 'Set Alert →',
+      destinationPlaceholder: 'e.g., Tokyo, Bali, Paris',
+      budgetPlaceholder: 'e.g., 1000',
+      button: 'Set Price Alert',
     },
   },
   
   footer: {
-    tagline: 'The smarter way to book travel',
-    description: 'Compare real-time prices from 40+ providers. No hidden fees. Just great deals.',
-    sections: [
-      {
-        title: 'Quick Links',
-        links: ['Flights', 'Hotels', 'Packages', 'Last-Minute Deals', 'Price Alerts'],
-      },
-      {
-        title: 'Popular Destinations',
-        links: ['Tokyo', 'Bali', 'Paris', 'New York', 'Dubai', 'London'],
-      },
-      {
-        title: 'Company',
-        links: ['About Us', 'How It Works', 'Contact', 'Privacy Policy', 'Terms of Service'],
-      },
-    ],
+    tagline: 'Your one-stop destination for comparing travel deals from the world\'s leading providers. Real-time pricing, zero hidden fees.',
     contact: {
+      title: 'Get in touch',
+      whatsapp: '+1 (234) 567-890',
       email: 'hello@traveldeal.hub',
-      phone: '+1 (555) 123-4567',
-      whatsapp: '+1 (555) 123-4567',
     },
-    social: ['Twitter', 'Instagram', 'Facebook', 'YouTube'],
+    quickLinks: [
+      { label: 'Flights', href: '#flights' },
+      { label: 'Hotels', href: '#hotels' },
+      { label: 'Packages', href: '#packages' },
+      { label: 'Price Alerts', href: '#price-alerts' },
+    ],
+    legal: [
+      { label: 'Privacy Policy', href: '/privacy' },
+      { label: 'Terms of Service', href: '/terms' },
+      { label: 'Cookie Policy', href: '/cookies' },
+    ],
+    social: [
+      { platform: 'Twitter', icon: 'Twitter', url: 'https://twitter.com/traveldeal' },
+      { platform: 'Facebook', icon: 'Facebook', url: 'https://facebook.com/traveldeal' },
+      { platform: 'Instagram', icon: 'Instagram', url: 'https://instagram.com/traveldeal' },
+    ],
     copyright: '© 2024 TravelDeal Hub. All rights reserved.',
   },
 };
